@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZiGi's Vault</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Top Page Header -->
+    <div class="container">
+
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html"> Home </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html"> About </a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="#"> Forum </a>
+                </div>
+
+            </div>
+
+            <!-- Top right side-->
+            <div class="right-side">
+                <div class="brand">
+                    ZiGi-Nation
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper"> 
+            <div class="portfolio-items-wrapper">
+                <!-- Port 1-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+                    <div class="img-text-wrapper"> 
+                        <div class="logo-wrapper">
+                            <img src="images/logos/quip.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            TEXT OVER HERE FOR THE FIRST PICTURE [1] !!
+                        </div>
+                     </div>
+                </div>
+
+                <!-- Port 2-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+
+                    <div class="img-text-wrapper"> 
+                        <div class="logo-wrapper">
+                            <img src="images/logos/shop-hacker.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            TEXT OVER HERE FOR THE FIRST PICTURE [2] !!
+                        </div>
+                     </div>
+                </div>
+
+                <!-- Port 3-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+
+                    <div class="img-text-wrapper"> 
+                        <div class="logo-wrapper">
+                            <img src="images/logos/devcamp.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            TEXT OVER HERE FOR THE FIRST PICTURE [3] !!
+                        </div>
+                     </div>
+                </div>
+
+                <!-- Port 4-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+
+                    <div class="img-text-wrapper"> 
+                        <div class="logo-wrapper">
+                            <img src="images/logos/devtrunk.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            TEXT OVER HERE FOR THE FIRST PICTURE [4] !!
+                        </div>
+                     </div>
+                </div>
+
+                <!-- Port 5-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+
+                    <div class="img-text-wrapper"> 
+                        <div class="logo-wrapper">
+                            <img src="images/logos/toastability.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            TEXT OVER HERE FOR THE FIRST PICTURE [5] !!
+                        </div>
+                     </div>
+                </div>
+
+                <!-- Port 6-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+
+                    <div class="img-text-wrapper"> 
+                        <div class="logo-wrapper">
+                            <img src="images/logos/crondose.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            TEXT OVER HERE FOR THE FIRST PICTURE [6] !!
+                        </div>
+                     </div>
+                </div>
+                <!-- ^^^^ If you want to add more clickable links with pics, add them on top of this ^^^^^-->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            });
+        });
+
+    </script>
+
+</html>

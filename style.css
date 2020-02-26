@@ -108,3 +108,29 @@ body{
     transition: 1s;
     filter: brightness(10%);
 }
+
+/* *********************About page ******************* */
+.body-contrainer{
+    padding: 0;
+    margin: 0;
+}
+
+.about-title{
+    padding-left: 5%;
+    /* border around "about zigination" */
+    border-style:solid;
+    border-color: black;
+}
+
+.about-para{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 40%;
+}
+
+.about-para p{
+    width: 50%;
+    border-style: solid;
+    border-color: red;
+}
